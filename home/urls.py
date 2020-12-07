@@ -8,6 +8,6 @@ urlpatterns = [
     path('Habout', views.Habout, name='Habout'),
     path('sd', views.sd, name='sd'),
     path('smp', views.smp, name='smp'),
-    path('sma', views.sma, name='sma'),
+    path('<id>/profilgr', views.profilgr),
     path('form', views.form, name='form'),
 ]

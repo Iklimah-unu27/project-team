@@ -40,8 +40,20 @@ def sd(request):
 def smp(request):
     return render(request, 'vhome/smp.html')
 
-def sma(request):
-    return render(request, 'vhome/sma.html')
+def profilgr(request,id):
+    task = dataguru.objects.filter(pk=id).first()
+    return render(request, 'vhome/profil.html',{ 
+        'list' : task,
+    })
+
+    # if request.POST:
+    #     dataguru.objects.filter(pk=id).first()
+        
+    # dtguru = models.murid.objects.all()
+    # return render(request, 'vhome/profil.html',
+    #     { 'data': dtguru,
+    #     })
+    
 
 def form(request):
     if request.POST:
