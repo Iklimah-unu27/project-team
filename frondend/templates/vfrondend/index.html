@@ -87,127 +87,43 @@
             <div class="w3-row-padding w3-grayscale" style="margin-top:2px">
               {% for d in data %}
               <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card" style="background-color: rgb(255, 255, 255);">
+                <div class="w3-card text-center" style="background-color: rgb(255, 255, 255);">
                   <img src="{% static 'assets/img/testmonial/testimonial-founder.png' %}" lass="founder-img mb-30" style="margin-top: 50px; text-align: center;">
                   <div class="w3-container">
-                    <h3 style="text-align: left; margin-left: 20px">{{ d.nama }}</h3>
-                    <h5 style="text-align: left; margin-left: 20px">Alamat : {{d.alamat}}</h5>
-                    <h5 style="text-align: left; margin-left: 20px">Biaya :{{d.biaya}}</h5>
+                    <h3 style="text-align: center;">{{ d.nama }}</h3>
+                    <div>
+                    <div class="row">
+                        <div class="col col-5">Alamat</div>
+                        <div class="col col-2">:</div>
+                        <div class="col col-5">{{d.alamat}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-5">Biaya</div>
+                        <div class="col col-2">:</div>
+                        <div class="col col-5">{{d.biaya}}</div>
+                    </div>
+                </div>
                     <a href="{% url 'login' %}"><button class="w3-button w3-light-grey w3-block" style="margin-top: 50px">Login To View Detail</button></a>
                   </div>
                 </div>
               </div>
               {% endfor %}
-            </div>
-        <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="{% static 'assets/img/gallery/cv_bg.jpg' %}">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <div class="cv-caption text-center">
-                            <p class="pera2"> Bergabunglah Bersama Kami Untuk Berbagi Pengalaman</p>
-                            <a href="{% url 'register' %}" class="border-btn2 border-btn4">DAFTAR PENGAJAR</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>         
-         <div class="apply-process-area apply-bg pt-150 pb-150" data-background="assets/img/gallery/how-applybg.png">
-          <div class="container">
-              <!-- Section Tittle -->
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div class="section-tittle white-text text-center">
-                          <h2 style="color: black;"> Panduan Pendaftaran</h2>
-                    </div>
-                  </div>
-              </div>
-              <!-- Apply Process Caption -->
-              <div class="row">
-                  <div class="col-lg-4 col-md-4">
-                      <div class="single-process text-center mb-30">
-                          <div class="process-ion">
-                              <span class="flaticon-search"></span>
-                          </div>
-                          <div class="process-cap">
-                              <h5>1. Klik Form Register yang telah disediakan</h5>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                      <div class="single-process text-center mb-30">
-                          <div class="process-ion">
-                              <span class="flaticon-curriculum-vitae"></span>
-                          </div>
-                          <div class="process-cap">
-                              <h5>2. Isi Username dan Password </h5>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                      <div class="single-process text-center mb-30">
-                          <div class="process-ion">
-                              <span class="flaticon-tour"></span>
-                          </div>
-                          <div class="process-cap">
-                              <h5>3. Login Akun Untuk Lengkapi Data Diri</h5>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-process text-center mb-30">
-                        <div class="process-ion">
-                            <span class="flaticon-tour"></span>
-                        </div>
-                        <div class="process-cap">
-                            <h5>4. Verifikasi Data Oleh Admin</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="single-process text-center mb-30">
-                      <div class="process-ion">
-                          <span class="flaticon-tour"></span>
-                      </div>
-                      <div class="process-cap">
-                          <h5>5. Terverifikasi Lengkap</h5>
-                          <p>Jika Belum Lengkap Akan Dikembalikan</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-process text-center mb-30">
-                    <div class="process-ion">
-                        <span class="flaticon-tour"></span>
-                    </div>
-                    <div class="process-cap">
-                        <h5>5. Selamat Anda Berhasil Mendaftar</h5>
-                    </div>
-                </div>
-            </div>
-          </div>
-         <div class="support-company-area support-padding fix">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="support-location-img">
-                            <img src="assets/img/service/support-img.jpg" alt="">
-                        </div>
+            </div>  
+          </div>      
+      </div>
+    </main>
+    <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="{% static 'assets/img/gallery/cv_bg.jpg' %}">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="cv-caption text-center">
+                        <p class="pera2"> Bergabunglah Bersama Kami Untuk Berbagi Pengalaman</p>
+                        <a href="{% url 'register' %}" class="border-btn2 border-btn4">DAFTAR PENGAJAR</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="support-company-area support-padding fix">
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="col-xl-6 col-lg-6">
-                      <div class="support-location-img">
-                          <img src="assets/img/service/support-img.jpg" alt="">
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </main>
+    </div> 
     <footer>
         <div class="footer-bottom-area footer-bg">
           <div class="container">
