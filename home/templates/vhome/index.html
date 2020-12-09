@@ -55,31 +55,15 @@
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
                                             <li><a href="{% url 'home' %}">Home</a></li>
-                                            <!-- <li><a href="{% url 'Hguru' %}">Guru </a></li>
-                                            <li><a href="#">Page</a>
-                                                <ul class="submenu">
-                                                    <li><a href="{% url 'sd' %}">SD</a></li>
-                                                    <li><a href="{% url 'smp' %}">SMP</a></li>
-                                                   
-                                                </ul>
-                                            </li>
-                                            <li><a href="{% url 'Habout' %}">About</a></li> -->
                                             <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
-                                                <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                <a class="nav-link dropdown-toggle" id="UserDropdown" aria-expanded="false">
                                                     <strong>{{ user }}</strong></a>
-                                                <div class="dropdown-menu navbar-dropdown" aria-labelledby="UserDropdown">
-                                                  <div class="dropdown-header text-center">
-                                                    <img class="img-md rounded-circle" src="{% static 'asset/images/faces/face8.jpg' %}" alt="Profile image">
-                                                    <p class="mb-1 mt-3 font-weight-semibold">{{ user }}</p>
-                                                    <p class="font-weight-light text-muted mb-0">{{data.pro}}</p>
-                                                  </div>
-                                                  <a class="dropdown-item">Activity<i class="dropdown-item-icon ti-location-arrow"></i></a>
-                                                  <a href="{% url 'keluar' %}" class="dropdown-item">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
-                                                </div>
                                               </li>
                                         </ul>
                                     </nav>
                                 </div>
+                                <a style="margin-bottom: 15px;" class="btn btn-danger" aria-pressed="false" data-toggle="button" value="Kembali"
+                                 onclick="history.back(-1)">kembali</a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->
@@ -149,9 +133,7 @@
                      <div class="row d-flex justify-content-between align-items-center">
                          <div class="col-xl-10 col-lg-10 ">
                              <div class="footer-copy-right">
-                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                 <p></p>
                              </div>
                          </div>
                          <div class="col-xl-2 col-lg-2">
