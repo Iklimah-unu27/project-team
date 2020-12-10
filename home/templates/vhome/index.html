@@ -74,12 +74,10 @@
                 </div>
            </div>
        </div>
-        <!-- Header End -->
     </header>
 
     <main>
-        <!-- slider Area End--><div class="slider-area ">
-            <!-- Mobile Menu -->
+        <div class="slider-area ">
             <div class="slider-area" style="background-color: rgb(206, 236, 236);">
                 <div class="row">
                     <div class="col-lg-12">
@@ -96,19 +94,22 @@
                      <div class="w3-container">
                     <h3 style="text-align: center;">{{ d.nama }}</h3>
                     <div>
-                    <div class="row justify-content-center">
-                        <div class="col col-2">Alamat:</div>
-                        <div class="col col-5">  {{d.alamat}}</div>
+                        <div class="row">
+                            <div class="col col-5">Alamat</div>
+                            <div class="col col-2">:</div>
+                            <div class="col col-5">{{d.alamat}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5">Biaya</div>
+                            <div class="col col-2">:</div>
+                            <div class="col col-5">{{d.biaya}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5">No_Telfon</div>
+                            <div class="col col-2">:</div>
+                            <div class="col col-5">{{d.nohp}}</div>
+                        </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col col-3">No_Telfon:</div>
-                        <div class="col col-5">  {{d.nohp}}</div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col col-1">Biaya:</div>
-                        <div class="col col-5">{{d.biaya}}</div>
-                    </div>
-                </div>
                         <a href="{{d.id}}/profilgr"><button class="w3-button w3-light-grey w3-block" style="margin-top: 50px"> Detail</button></a>
                   </div> 
                       <!-- <div class="w3-container">
